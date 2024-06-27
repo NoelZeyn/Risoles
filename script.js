@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     orderForm.addEventListener('submit', function(event) {
-        // const name = document.getElementById('name').value.trim();
-        // const email = document.getElementById('email').value.trim();
-        // const order = document.getElementById('order').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const order = document.getElementById('order').value.trim();
 
-        // if (!name || !email || !order) {
-        //     event.preventDefault();
-        //     alert("Semua kolom harus diisi.");
-        // }
-        alert("Maaf, fitur pemesanan sedang dalam maintenance sementara. Tolong hubungi kami melewati whatsapp untuk lebih lanjut");
+        if (!name || !email || !order) {
+            event.preventDefault();
+            alert("Semua kolom harus diisi.");
+        }
+        // alert("Maaf, fitur pemesanan sedang dalam maintenance sementara. Tolong hubungi kami melewati whatsapp untuk lebih lanjut");
     });
 
     // Scroll smooth untuk semua link dalam halaman
